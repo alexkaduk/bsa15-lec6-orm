@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.Linq;
+using bsa15_lec6_orm.Entities;
 using bsa15_lec6_orm.Models;
 
 namespace bsa15_lec6_orm
@@ -13,15 +14,15 @@ namespace bsa15_lec6_orm
     {
         static void Main(string[] args)
         {
-            var ctx = new Context();
+            var ctx = new CourseContext();
 
-            Console.WriteLine(ctx.ContextID.ToString());
 
-            // тут помилка (((
-            //using (Context ctx = new Context())
+            //// тут помилка (((
+            //using (var ctx = new CourseContext())
             //{
-            //    Console.WriteLine(ctx.ToString());
+            //    Console.WriteLine(ctx.Categories.Select(c=>c));
             //}
         }
+
     }
 }

@@ -5,14 +5,14 @@ namespace bsa15_lec6_orm.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<bsa15_lec6_orm.Entities.Context>
+    internal sealed class Configuration : DbMigrationsConfiguration<bsa15_lec6_orm.Entities.CourseContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(bsa15_lec6_orm.Entities.Context context)
+        protected override void Seed(bsa15_lec6_orm.Entities.CourseContext context)
         {
             //  This method will be called after migrating to the latest version.
 

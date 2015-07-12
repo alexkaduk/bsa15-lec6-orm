@@ -48,8 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Context.cs" />
-    <Compile Include="Entities\ContextInitializer.cs" />
+    <Compile Include="Entities\CourseContext.cs" />
+    <Compile Include="Entities\CourseContextInitializer.cs" />
     <Compile Include="Migrations\201507112006044_CreateDataBaseAndInsertData.cs" />
     <Compile Include="Migrations\201507112006044_CreateDataBaseAndInsertData.Designer.cs">
       <DependentUpon>201507112006044_CreateDataBaseAndInsertData.cs</DependentUpon>
