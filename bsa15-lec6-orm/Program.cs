@@ -15,6 +15,7 @@ namespace bsa15_lec6_orm
         static void Main(string[] args)
         {
             var ctx = new CourseContext();
+            Console.WriteLine(ctx.GetType().ToString());
 
 
             //// тут помилка (((
