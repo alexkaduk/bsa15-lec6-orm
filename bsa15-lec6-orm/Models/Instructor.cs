@@ -12,7 +12,7 @@ namespace bsa15_lec6_orm.Models
 
         public int Id { get; set; }
 
-        [Required]
+        //[Required]
         public string Name { get; set; }
 
         public virtual ICollection<Lecture> Lectures { get; set; }

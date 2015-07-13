@@ -15,20 +15,21 @@ namespace bsa15_lec6_orm.Models
         //{
         //    this.Tests = new List<Test>();
         //}
+        public Question()
+        {
+            this.Tests = new HashSet<Test>();
+        //        public Course()
+        //{
+        //    this.Students = new HashSet<Student>();
+        //}
+        }
 
         public int Id { get; set; }
 
-        [Required]
         public string Text { get; set; }
-
-        //[ForeignKey("Category")]
-        //public int CategoryRefId { get; set; }
-
-        //[ForeignKey("Tests")]
-        //public int TestRefId { get; set; }
 
         public virtual Category Category { get; set; }
 
-        //public virtual ICollection<Test> Tests { get; set; }
+        public virtual ICollection<Test> Tests { get; set; }
     }
 }

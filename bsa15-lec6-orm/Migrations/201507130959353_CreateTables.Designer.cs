@@ -13,7 +13,7 @@ namespace bsa15_lec6_orm.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201507122030162_CreateTables"; }
+            get { return "201507130959353_1"; }
         }
         
         string IMigrationMetadata.Source

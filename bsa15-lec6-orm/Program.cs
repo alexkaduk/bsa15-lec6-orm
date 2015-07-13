@@ -14,20 +14,37 @@ namespace bsa15_lec6_orm
     {
         static void Main(string[] args)
         {
-            var ctx = new CourseContext();
-            Console.WriteLine(ctx.Categories.Count().ToString());
-
             var bsa = new Bsa();
 
+            //bsa.InsertData();
+
+            // Task #1
+            bsa.UsersPassTest();
+
+            // Task #2
+            bsa.UsersPassTestWithGoodTime();
+
+            // Task #3
+            bsa.UsersPassTestWithBadTime();
+
+            // Task #4
+            bsa.UsersGroupByCity();
+
+            // Task #5
+            bsa.UsersPassTestGroupByCity();
+
+
+            // Task #7
+            bsa.QuestionPopularityInTestRating();
+
+            // Task #8
             bsa.InstructorRating();
 
-            //Console.WriteLine(instructorsName);
+            // Task #9
+            bsa.TestAverageResultInCategory();
 
-            //// тут помилка (((
-            //using (var ctx = new CourseContext())
-            //{
-            //    Console.WriteLine(ctx.Categories.Select(c=>c));
-            //}
+            Console.ReadKey();
+
         }
 
     }
