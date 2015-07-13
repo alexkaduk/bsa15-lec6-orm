@@ -10,25 +10,10 @@ namespace bsa15_lec6_orm.Models
 {
     public class TestWork
     {
-        //[Key, ForeignKey("Test")]
         public int Id { get; set; }
-
-        //[Required]
         public int Result { get; set; }
-
-        //[Required]
         public TimeSpan ExecutionTime { get; set; }
-
-        //[ForeignKey("User")]
-        //public int UserRefId { get; set; }
-
-        //[ForeignKey("Test")]
-        //public int TestRefId { get; set; }
-
-        //[Required]
         public virtual User User { get; set; }
-
-        //[Required]
         public virtual Test Test { get; set; }
     }
 }

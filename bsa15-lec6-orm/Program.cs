@@ -33,6 +33,8 @@ namespace bsa15_lec6_orm
             // Task #5
             bsa.UsersPassTestGroupByCity();
 
+            // Task #6
+            bsa.UserResultsAndPercentForCategory();
 
             // Task #7
             bsa.QuestionPopularityInTestRating();
@@ -42,6 +44,9 @@ namespace bsa15_lec6_orm
 
             // Task #9
             bsa.TestAverageResultInCategory();
+
+            // Task #10
+            bsa.QuestionResultRating();
 
             Console.ReadKey();
 

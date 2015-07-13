@@ -569,33 +569,18 @@ namespace bsa15_lec6_orm
         // Кожний тест має у собі кілька питань різноманітних категорій, наприклад, ооп, .нет, бд. 
         // Кожне питання має кількість балів за вірну відповідь, якщо цього не виставляти, то можна рахувати, що вірна відповідь 1 бал. 
         // Таким чином у тесті, наприклад, 5 питань з категорії .нет. Максимально можна набрати 5 балів. Якщо вірно відповів користувач на 3 питання, то це 3 / 5  * 100 = 60%.
-        public void UsersResults()
+        public void UserResultsAndPercentForCategory()
         {
-            //var usersResults = _users
-            //                    .Join(_testWorks,
-            //                            user => user.Name,
-            //                            work => work.UserName,
-            //                            (user, work) => new { user, work })
-            //                    .Join(_tests,
-            //                            tw => tw.work.TestName,
-            //                            test => test.TestName,
-            //                            (tw, test) => new { tw, test })
-            //                    .Select(r => new
-            //                    {
-            //                        r.tw.user.Name,
-            //                        r.tw.work.ResultMark,
-            //                        r.tw.work.ExecutionTime,
-            //                        TestQuestionMarkSum = r.test.Questions.Sum(q => q.Mark),
-            //                        ResultPercent = r.tw.work.ResultMark / r.test.Questions.Sum(q => q.Mark) * 100
-            //                    }
-            //                    );
+            //var averageByCategory = _courseContext.TestWorks.GroupBy(x => x.Test.Category,
+            //    (cat, average) => new { Category = cat, Average = average.Average(y => y.Result) });
+            ////.Select(x => new { x.Key.Name, Average = x.Average(y => y.Result) });
 
-            //Console.WriteLine("Task #6");
-            //Console.WriteLine("*** persent = (student_mark) / (max_mark) * 100 | max_mark = sum(test_question_mark)");
-            //foreach (var item in usersResults)
+            //Console.WriteLine("Task# 9");
+            //foreach (var i in averageByCategory)
             //{
-            //    Console.WriteLine("{0}: mark {1}, time {2}, persent {3}% (max {4})", item.Name, item.ResultMark, item.ExecutionTime, item.ResultPercent, item.TestQuestionMarkSum);
+            //    Console.WriteLine("Test '{0}' (id {1}) ", i.Category.Name, i.Average);
             //}
+            //Console.WriteLine();
         }
 
         //7.	Рейтинг популярности вопросов в тестах (выводить количество использования данного вопроса в тестах)
@@ -647,37 +632,16 @@ namespace bsa15_lec6_orm
         //9.	Средний бал тестов по категориям, отсортированый по убыванию.
         public void TestAverageResultInCategory()
         {
-            //var querty = from t in _courseContext.Tests
-            //             from t2 in t.Test.Category
+            var averageByCategory = _courseContext.TestWorks.GroupBy(x => x.Test.Category,
+                (cat, average) => new {Category = cat, Average = average.Average(y=>y.Result)});
+                //.Select(x => new { x.Key.Name, Average = x.Average(y => y.Result) });
 
-            //var querty = from tw in _courseContext.TestWorks
-            //            group tw by tw.Test.Category.Id
-            //            into g
-            //            let count = g.Count()
-            //            select new
-            //            {
-            //                TestWorks = g.FirstOrDefault(),
-            //                TestCount = count
-            //            };
-            //var querty = from c in _courseContext.Categories
-            //             group c by c.Tests.Select(t=>t.TestWork)
-            //                 into g
-            //                 let count = g.Count()
-            //                 select new
-            //                 {
-            //                     TestWorks = g.FirstOrDefault(),
-            //                     TestCount = count
-            //                 };
-            //var querty = from tw in _courseContext.TestWorks
-            //             from t in tw.Test
-            //             from c in tw.
-
-            //Console.WriteLine("Task# 9");
-            //foreach (var i in querty)
-            //{
-            //    Console.WriteLine("Test '{0}' (id {2}) have been passed {1} times...", i.TestWorks.Test.Category.Name, i.TestCount, i.TestWorks.Test.TestId);
-            //}
-            //Console.WriteLine();
+            Console.WriteLine("Task# 9");
+            foreach (var i in averageByCategory)
+            {
+                Console.WriteLine("Category '{0}': average makr {1} ", i.Category.Name, i.Average);
+            }
+            Console.WriteLine();
         }
 
         //10.	Рейтинг вопросов по набранным баллам

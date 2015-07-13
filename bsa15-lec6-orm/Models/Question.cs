@@ -11,17 +11,9 @@ namespace bsa15_lec6_orm.Models
 {
     public class Question
     {
-        //public Question()
-        //{
-        //    this.Tests = new List<Test>();
-        //}
         public Question()
         {
             this.Tests = new HashSet<Test>();
-        //        public Course()
-        //{
-        //    this.Students = new HashSet<Student>();
-        //}
         }
 
         public int Id { get; set; }
