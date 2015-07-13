@@ -5,10 +5,10 @@ namespace bsa15_lec6_orm.Models
 {
     public class Instructor
     {
-        public Instructor()
-        {
-            this.Lectures = new List<Lecture>();
-        }
+        //public Instructor()
+        //{
+        //    this.Lectures = new List<Lecture>();
+        //}
 
         public int Id { get; set; }
 

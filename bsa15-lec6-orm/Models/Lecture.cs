@@ -19,10 +19,8 @@ namespace bsa15_lec6_orm.Models
         
         public string Description { get; set; }
 
-        [Required]
         public virtual ICollection<Instructor> Instructors { get; set; }
-
-        [Required]
+ 
         public virtual ICollection<Category> Categories { get; set; }
     }
 }

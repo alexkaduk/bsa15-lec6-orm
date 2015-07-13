@@ -15,8 +15,13 @@ namespace bsa15_lec6_orm
         static void Main(string[] args)
         {
             var ctx = new CourseContext();
-            Console.WriteLine(ctx.GetType().ToString());
+            Console.WriteLine(ctx.Categories.Count().ToString());
 
+            var bsa = new Bsa();
+
+            bsa.InstructorRating();
+
+            //Console.WriteLine(instructorsName);
 
             //// тут помилка (((
             //using (var ctx = new CourseContext())

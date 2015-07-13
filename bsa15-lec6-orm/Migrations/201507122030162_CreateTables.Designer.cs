@@ -7,13 +7,13 @@ namespace bsa15_lec6_orm.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class CreateDataBaseAndInsertData : IMigrationMetadata
+    public sealed partial class CreateTables : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateDataBaseAndInsertData));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateTables));
         
         string IMigrationMetadata.Id
         {
-            get { return "201507112006044_CreateDataBaseAndInsertData"; }
+            get { return "201507122030162_CreateTables"; }
         }
         
         string IMigrationMetadata.Source

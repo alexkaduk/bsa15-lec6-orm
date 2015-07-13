@@ -48,16 +48,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bsa.cs" />
     <Compile Include="Entities\CourseContext.cs" />
     <Compile Include="Entities\CourseContextInitializer.cs" />
-    <Compile Include="Migrations\201507112006044_CreateDataBaseAndInsertData.cs" />
-    <Compile Include="Migrations\201507112006044_CreateDataBaseAndInsertData.Designer.cs">
-      <DependentUpon>201507112006044_CreateDataBaseAndInsertData.cs</DependentUpon>
+    <Compile Include="Migrations\201507122030162_CreateTables.cs" />
+    <Compile Include="Migrations\201507122030162_CreateTables.Designer.cs">
+      <DependentUpon>201507122030162_CreateTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507122050593_1.cs" />
+    <Compile Include="Migrations\201507122050593_1.Designer.cs">
+      <DependentUpon>201507122050593_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507122056056_2.cs" />
+    <Compile Include="Migrations\201507122056056_2.Designer.cs">
+      <DependentUpon>201507122056056_2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Lecture.cs" />
     <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\TestWork.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -66,8 +79,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201507112006044_CreateDataBaseAndInsertData.resx">
-      <DependentUpon>201507112006044_CreateDataBaseAndInsertData.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201507122030162_CreateTables.resx">
+      <DependentUpon>201507122030162_CreateTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507122050593_1.resx">
+      <DependentUpon>201507122050593_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507122056056_2.resx">
+      <DependentUpon>201507122056056_2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
