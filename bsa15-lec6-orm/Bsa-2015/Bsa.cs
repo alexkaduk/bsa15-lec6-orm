@@ -20,13 +20,13 @@ namespace bsa15_lec6_orm
 
         public void InsertData()
         {
-            // CreateInstructors();
-            // CreateCategories();
-            // InsertLectures();
-            // InsertQuestions();
-            // InsertTests();
-            // InsertUsers();
-            // InsertTestWork();
+            CreateInstructors();
+            CreateCategories();
+            InsertLectures();
+            InsertQuestions();
+            InsertTests();
+            InsertUsers();
+            InsertTestWork();
         }
 
         private static void InsertTestWork()
@@ -38,7 +38,7 @@ namespace bsa15_lec6_orm
                     Id = 101,
                     Result = 90,
                     ExecutionTime = new TimeSpan(0, 25, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".NET test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".Net test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Alex")
                 },
                 new TestWork
@@ -46,7 +46,7 @@ namespace bsa15_lec6_orm
                     Id = 102,
                     Result = 95,
                     ExecutionTime = new TimeSpan(0, 19, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".NET test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".Net test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Jora")
                 },
                 new TestWork
@@ -54,7 +54,7 @@ namespace bsa15_lec6_orm
                     Id = 103,
                     Result = 110,
                     ExecutionTime = new TimeSpan(0, 15, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".NET test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".Net test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Roma")
                 },
                 new TestWork
@@ -62,7 +62,7 @@ namespace bsa15_lec6_orm
                     Id = 104,
                     Result = 110,
                     ExecutionTime = new TimeSpan(0, 28, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".NET test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".Net test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Sergiy")
                 },
                 new TestWork
@@ -70,7 +70,7 @@ namespace bsa15_lec6_orm
                     Id = 105,
                     Result = 105,
                     ExecutionTime = new TimeSpan(0, 18, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".JS test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "JS test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Alex")
                 },
                 new TestWork
@@ -78,7 +78,7 @@ namespace bsa15_lec6_orm
                     Id = 106,
                     Result = 80,
                     ExecutionTime = new TimeSpan(0, 17, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".JS test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "JS test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Jora")
                 },
                 new TestWork
@@ -86,7 +86,7 @@ namespace bsa15_lec6_orm
                     Id = 107,
                     Result = 70,
                     ExecutionTime = new TimeSpan(0, 22, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".PHP test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "PHP test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Jora")
                 },
                 new TestWork
@@ -94,7 +94,7 @@ namespace bsa15_lec6_orm
                     Id = 108,
                     Result = 120,
                     ExecutionTime = new TimeSpan(0, 16, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".PHP test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "PHP test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Roma")
                 },
                 new TestWork
@@ -102,7 +102,7 @@ namespace bsa15_lec6_orm
                     Id = 109,
                     Result = 130,
                     ExecutionTime = new TimeSpan(0, 35, 0),
-                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".PHP test bsa15"),
+                    Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "PHP test bsa15"),
                     User = _courseContext.Users.SingleOrDefault(u => u.Name == "Andriy")
                 }
             };
@@ -197,7 +197,7 @@ namespace bsa15_lec6_orm
                 new Test
                 {
                     TestId = 101,
-                    Name = ".NET test bsa15",
+                    Name = ".Net test bsa15",
                     MaxTime = new TimeSpan(0, 20, 0),
                     PassResult = 100,
                     Category = _courseContext.Categories.SingleOrDefault(c=>c.Name==".Net"),

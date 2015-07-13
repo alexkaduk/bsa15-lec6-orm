@@ -51,9 +51,13 @@
     <Compile Include="Bsa-2015\Bsa.cs" />
     <Compile Include="Entities\CourseContext.cs" />
     <Compile Include="Entities\CourseContextInitializer.cs" />
-    <Compile Include="Migrations\201507130959353_CreateTables.cs" />
-    <Compile Include="Migrations\201507130959353_CreateTables.Designer.cs">
-      <DependentUpon>201507130959353_CreateTables.cs</DependentUpon>
+    <Compile Include="Migrations\201507132007094_CreateTablesAndSeedDataInsert.cs" />
+    <Compile Include="Migrations\201507132007094_CreateTablesAndSeedDataInsert.Designer.cs">
+      <DependentUpon>201507132007094_CreateTablesAndSeedDataInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507132013503_AddData.cs" />
+    <Compile Include="Migrations\201507132013503_AddData.Designer.cs">
+      <DependentUpon>201507132013503_AddData.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -71,8 +75,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201507130959353_CreateTables.resx">
-      <DependentUpon>201507130959353_CreateTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201507132007094_CreateTablesAndSeedDataInsert.resx">
+      <DependentUpon>201507132007094_CreateTablesAndSeedDataInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507132013503_AddData.resx">
+      <DependentUpon>201507132013503_AddData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

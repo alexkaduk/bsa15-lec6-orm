@@ -16,6 +16,7 @@ namespace bsa15_lec6_orm
         {
             var bsa = new Bsa();
 
+            //if Seed doesn't insert data, uncomment this method
             //bsa.InsertData();
 
             // Task #1
