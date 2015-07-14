@@ -27,6 +27,505 @@ namespace bsa15_lec6_orm
             InsertTests();
             InsertUsers();
             InsertTestWork();
+            InsertAnswer();
+        }
+
+        private void InsertAnswer()
+        {
+            var answers = new List<Answer>
+            {
+                #region tw1 answers
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 1),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 2),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 8),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 10),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 12),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 1)
+                },
+#endregion
+                
+                #region tw2 answers
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 1),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 2),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 8),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 10),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 12),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 2)
+                },
+#endregion
+
+                #region tw3 answers
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 1),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 2),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 8),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 10),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 12),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 3)
+                },
+#endregion
+
+                #region tw4 answers
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 1),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 2),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 8),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 10),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 12),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 4)
+                },
+#endregion
+
+                #region tw5 answers
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 3),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 5)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 4),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 5)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 5)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 5)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 5)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 5)
+                },
+#endregion
+
+                #region tw6 answers
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 3),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 6)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 4),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 6)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 6)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 6)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 6)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 6)
+                },
+#endregion
+                         
+                #region tw7 answers
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 5),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 7)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 6),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 7)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 7)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 7)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 7)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 7)
+                },
+#endregion
+
+                #region tw8 answers
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 5),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 8)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 6),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 8)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 8)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 8)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 8)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 8)
+                },
+#endregion
+
+                #region tw9 answers
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 5),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 9)
+                },
+                new Answer()
+                {
+                    Correct = false,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 6),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 9)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 7),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 9)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 9),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 9)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 11),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 9)
+                },
+                new Answer()
+                {
+                    Correct = true,
+                    Text = "Answer text",
+                    Question = _courseContext.Questions.SingleOrDefault(i=>i.Id == 13),
+                    TestWork = _courseContext.TestWorks.SingleOrDefault(tw=>tw.Id == 9)
+                }
+#endregion
+            };
+
+            answers.ForEach(t => _courseContext.Answers.AddOrUpdate(p => p.Id, t));
+            _courseContext.SaveChanges();
         }
 
         private static void InsertTestWork()
@@ -35,7 +534,7 @@ namespace bsa15_lec6_orm
             {
                 new TestWork
                 {
-                    Id = 101,
+                    Id = 1,
                     Result = 90,
                     ExecutionTime = new TimeSpan(0, 25, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".Net test bsa15"),
@@ -43,7 +542,7 @@ namespace bsa15_lec6_orm
                 },
                 new TestWork
                 {
-                    Id = 102,
+                    Id = 2,
                     Result = 95,
                     ExecutionTime = new TimeSpan(0, 19, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".Net test bsa15"),
@@ -51,7 +550,7 @@ namespace bsa15_lec6_orm
                 },
                 new TestWork
                 {
-                    Id = 103,
+                    Id = 3,
                     Result = 110,
                     ExecutionTime = new TimeSpan(0, 15, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".Net test bsa15"),
@@ -59,7 +558,7 @@ namespace bsa15_lec6_orm
                 },
                 new TestWork
                 {
-                    Id = 104,
+                    Id = 4,
                     Result = 110,
                     ExecutionTime = new TimeSpan(0, 28, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == ".Net test bsa15"),
@@ -67,7 +566,7 @@ namespace bsa15_lec6_orm
                 },
                 new TestWork
                 {
-                    Id = 105,
+                    Id = 5,
                     Result = 105,
                     ExecutionTime = new TimeSpan(0, 18, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "JS test bsa15"),
@@ -75,7 +574,7 @@ namespace bsa15_lec6_orm
                 },
                 new TestWork
                 {
-                    Id = 106,
+                    Id = 6,
                     Result = 80,
                     ExecutionTime = new TimeSpan(0, 17, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "JS test bsa15"),
@@ -83,7 +582,7 @@ namespace bsa15_lec6_orm
                 },
                 new TestWork
                 {
-                    Id = 107,
+                    Id = 7,
                     Result = 70,
                     ExecutionTime = new TimeSpan(0, 22, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "PHP test bsa15"),
@@ -91,7 +590,7 @@ namespace bsa15_lec6_orm
                 },
                 new TestWork
                 {
-                    Id = 108,
+                    Id = 8,
                     Result = 120,
                     ExecutionTime = new TimeSpan(0, 16, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "PHP test bsa15"),
@@ -99,7 +598,7 @@ namespace bsa15_lec6_orm
                 },
                 new TestWork
                 {
-                    Id = 109,
+                    Id = 9,
                     Result = 130,
                     ExecutionTime = new TimeSpan(0, 35, 0),
                     Test = _courseContext.Tests.SingleOrDefault(t => t.Name == "PHP test bsa15"),
@@ -483,9 +982,9 @@ namespace bsa15_lec6_orm
         public void UsersPassTest()
         {
             var users = from work in _courseContext.TestWorks
-                            where work.Result >= work.Test.PassResult
-                            select work;
-            
+                        where work.Result >= work.Test.PassResult
+                        select work;
+
             Console.WriteLine("Task #1");
             foreach (var item in users)
             {
@@ -498,7 +997,7 @@ namespace bsa15_lec6_orm
         public void UsersPassTestWithGoodTime()
         {
             var users = from work in _courseContext.TestWorks
-                        where work.Result >= work.Test.PassResult && work.ExecutionTime<=work.Test.MaxTime
+                        where work.Result >= work.Test.PassResult && work.ExecutionTime <= work.Test.MaxTime
                         select work;
 
             Console.WriteLine("Task #2");
@@ -548,19 +1047,19 @@ namespace bsa15_lec6_orm
         {
             var users =
                 _courseContext.TestWorks.Where(
-                    tw => (tw. Result >= tw.Test.PassResult))
+                    tw => (tw.Result >= tw.Test.PassResult))
                     .GroupBy(c => c.User.City, (city, user) => new { City = city, Users = user });
 
             Console.WriteLine("Task #5");
-           
-            foreach (var item in users) 
-                 {
-                     Console.WriteLine("from {0}: {1} student(s)", item.City, item.Users.Count()); 
-                     foreach (var s in item.Users) 
-                     {
-                         Console.WriteLine("\t {0}, {1}, {2}, category '{3}' (result {4}, time {5} min)", s.User.Name, s.User.Email, s.User.University, s.Test.Category.Name, s.Result, s.ExecutionTime.Minutes); 
-                     } 
-                 } 
+
+            foreach (var item in users)
+            {
+                Console.WriteLine("from {0}: {1} student(s)", item.City, item.Users.Count());
+                foreach (var s in item.Users)
+                {
+                    Console.WriteLine("\t {0}, {1}, {2}, category '{3}' (result {4}, time {5} min)", s.User.Name, s.User.Email, s.User.University, s.Test.Category.Name, s.Result, s.ExecutionTime.Minutes);
+                }
+            }
 
             Console.WriteLine();
         }
@@ -571,37 +1070,60 @@ namespace bsa15_lec6_orm
         // Таким чином у тесті, наприклад, 5 питань з категорії .нет. Максимально можна набрати 5 балів. Якщо вірно відповів користувач на 3 питання, то це 3 / 5  * 100 = 60%.
         public void UserResultsAndPercentForCategory()
         {
-            //var averageByCategory = _courseContext.TestWorks.GroupBy(x => x.Test.Category,
-            //    (cat, average) => new { Category = cat, Average = average.Average(y => y.Result) });
-            ////.Select(x => new { x.Key.Name, Average = x.Average(y => y.Result) });
+            //var userResult =
+            //    _courseContext.TestWorks.OrderBy(u=>u.Test.Category.Name);
 
-            //Console.WriteLine("Task# 9");
-            //foreach (var i in averageByCategory)
-            //{
-            //    Console.WriteLine("Test '{0}' (id {1}) ", i.Category.Name, i.Average);
-            //}
-            //Console.WriteLine();
+            var userResult = _courseContext.TestWorks.GroupBy(tw => tw.User, (u, tw) => new
+            {
+                User = u, 
+                TestWork = u.TestWorks
+            })
+            .Select( r => new 
+            { 
+                UserName= r.User.Name, 
+                Results = r.TestWork.Select(ur => new
+                {
+                    ResultPoint = ur.Result, 
+                    Time = ur.ExecutionTime, 
+                    TestName = ur.Test.Name, 
+                    Category = ur.Test.Category.Name,
+                    CorrectAnswer = (double) ur.Answers.Count(a => a.Correct == true),
+                    TestQuestionsCount = ur.Test.Questions.Count()
+                })
+                });
+
+            Console.WriteLine("Task# 6 ('correct questions %' = 'CorrectAnswer' / 'TestQuestionsCount' * 100)");
+            foreach (var u in userResult)
+            {
+                Console.WriteLine("{0} (points\t| time, min\t| correct questions %\t| test name\t\t| category)", u.UserName);
+                foreach (var r in u.Results)
+                {
+                    Console.WriteLine("\t{0}\t| {1}\t\t| {2:#.##} ({5}/{6}) \t\t| {3} \t| {4}", r.ResultPoint, r.Time.Minutes, r.CorrectAnswer/r.TestQuestionsCount*100, r.TestName, r.Category, r.CorrectAnswer, r.TestQuestionsCount );
+
+                }
+                Console.WriteLine();
+            }     
         }
 
         //7.	Рейтинг популярности вопросов в тестах (выводить количество использования данного вопроса в тестах)
         public void QuestionPopularityInTestRating()
         {
             var querty = from q in _courseContext.Questions
-                from t in q.Tests
-                group q by q.Id
-                into g
-                let sum = g.Count()
-                orderby sum descending, g.Key ascending
-                select new
-                {
-                    Question = g.FirstOrDefault(),
-                    Count = sum
-                };
+                         from t in q.Tests
+                         group q by q.Id
+                             into g
+                             let sum = g.Count()
+                             orderby sum descending, g.Key ascending
+                             select new
+                             {
+                                 Question = g.FirstOrDefault(),
+                                 Count = sum
+                             };
 
             Console.WriteLine("Task# 7");
             foreach (var i in querty)
             {
-                Console.WriteLine("Question #{0} have been user {1} times (text: '{2}')...", i.Question.Id.ToString(), i.Count, i.Question.Text.ToString());
+                Console.WriteLine("Question #{0} have been used {1} times (text: '{2}')...", i.Question.Id.ToString(), i.Count, i.Question.Text.ToString());
             }
             Console.WriteLine();
         }
@@ -633,13 +1155,13 @@ namespace bsa15_lec6_orm
         public void TestAverageResultInCategory()
         {
             var averageByCategory = _courseContext.TestWorks.GroupBy(x => x.Test.Category,
-                (cat, average) => new {Category = cat, Average = average.Average(y=>y.Result)});
-                //.Select(x => new { x.Key.Name, Average = x.Average(y => y.Result) });
+                (cat, average) => new { Category = cat, Average = average.Average(y => y.Result) });
+            //.Select(x => new { x.Key.Name, Average = x.Average(y => y.Result) });
 
             Console.WriteLine("Task# 9");
             foreach (var i in averageByCategory)
             {
-                Console.WriteLine("Category '{0}': average makr {1} ", i.Category.Name, i.Average);
+                Console.WriteLine("Category '{0}': average makr {1:#.##} ", i.Category.Name, i.Average);
             }
             Console.WriteLine();
         }
@@ -647,7 +1169,16 @@ namespace bsa15_lec6_orm
         //10.	Рейтинг вопросов по набранным баллам
         public void QuestionResultRating()
         {
+            var questionsRating = _courseContext.Answers.GroupBy(a => a.Question.Id,
+                (q, s) => new {Question = q, QuestionSum = s.Count(x => x.Correct==true) });
 
+            Console.WriteLine("Task# 10");
+            Console.WriteLine("Rating \tQuestion (id | text)");
+            foreach (var i in questionsRating)
+            {
+                Console.WriteLine("    {0} \t {1} | '{2}'", i.QuestionSum, i.Question, _courseContext.Questions.SingleOrDefault(q => q.Id == i.Question).Text);
+            }
+            Console.WriteLine();
         }
     }
 }

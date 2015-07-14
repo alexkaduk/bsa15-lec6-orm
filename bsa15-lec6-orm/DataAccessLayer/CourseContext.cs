@@ -18,6 +18,7 @@ namespace bsa15_lec6_orm.Entities
         public DbSet<Test> Tests { get; set; }
         public DbSet<TestWork> TestWorks { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Answer> Answers { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

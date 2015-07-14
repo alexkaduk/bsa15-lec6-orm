@@ -15,6 +15,7 @@ namespace bsa15_lec6_orm.Models
         public TimeSpan ExecutionTime { get; set; }
         public virtual User User { get; set; }
         public virtual Test Test { get; set; }
+        public virtual ICollection<Answer> Answers { get; set; }
     }
 }
 

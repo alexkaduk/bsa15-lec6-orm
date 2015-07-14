@@ -23,5 +23,6 @@ namespace bsa15_lec6_orm.Models
         public virtual Category Category { get; set; }
 
         public virtual ICollection<Test> Tests { get; set; }
+        public ICollection<Answer> Answers { get; set; }
     }
 }

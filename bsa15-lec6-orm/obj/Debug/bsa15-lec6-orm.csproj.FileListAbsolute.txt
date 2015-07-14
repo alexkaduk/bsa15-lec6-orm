@@ -11,3 +11,17 @@ H:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15-lec6-orm.pdb
 H:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15_lec6_orm.Migrations.CreateTablesAndSeedDataInsert.resources
 H:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15-lec6-orm.csproj.GenerateResource.Cache
 H:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15_lec6_orm.Migrations.AddData.resources
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\bin\Debug\bsa15-lec6-orm.exe.config
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15-lec6-orm.exe
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15-lec6-orm.pdb
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\bin\Debug\bsa15-lec6-orm.exe
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\bin\Debug\bsa15-lec6-orm.pdb
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\bin\Debug\EntityFramework.dll
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\bin\Debug\EntityFramework.SqlServer.dll
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\bin\Debug\EntityFramework.xml
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\bin\Debug\EntityFramework.SqlServer.xml
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15-lec6-orm.csprojResolveAssemblyReference.cache
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15_lec6_orm.Migrations.CreateTablesAndSeedDataInsert.resources
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15_lec6_orm.Migrations.AddData.resources
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15-lec6-orm.csproj.GenerateResource.Cache
+G:\projects\bsa15-lec6-orm\bsa15-lec6-orm\obj\Debug\bsa15_lec6_orm.Migrations.AddAnswerTable.resources

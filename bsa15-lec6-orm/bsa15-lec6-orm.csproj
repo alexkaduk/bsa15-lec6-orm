@@ -49,8 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bsa-2015\Bsa.cs" />
-    <Compile Include="Entities\CourseContext.cs" />
-    <Compile Include="Entities\CourseContextInitializer.cs" />
+    <Compile Include="DataAccessLayer\CourseContext.cs" />
+    <Compile Include="DataAccessLayer\CourseContextInitializer.cs" />
     <Compile Include="Migrations\201507132007094_CreateTablesAndSeedDataInsert.cs" />
     <Compile Include="Migrations\201507132007094_CreateTablesAndSeedDataInsert.Designer.cs">
       <DependentUpon>201507132007094_CreateTablesAndSeedDataInsert.cs</DependentUpon>
@@ -59,7 +59,12 @@
     <Compile Include="Migrations\201507132013503_AddData.Designer.cs">
       <DependentUpon>201507132013503_AddData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201507141044595_AddAnswerTable.cs" />
+    <Compile Include="Migrations\201507141044595_AddAnswerTable.Designer.cs">
+      <DependentUpon>201507141044595_AddAnswerTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Answer.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Lecture.cs" />
     <Compile Include="Models\Instructor.cs" />
@@ -80,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201507132013503_AddData.resx">
       <DependentUpon>201507132013503_AddData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507141044595_AddAnswerTable.resx">
+      <DependentUpon>201507141044595_AddAnswerTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
